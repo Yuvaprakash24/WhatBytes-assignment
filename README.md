@@ -6,8 +6,8 @@ This Django project is a fully functional user management system featuring authe
 
 ## 🚀 Live Demo  
 
-**[Visit the Live Website](https://what-bytes-assignment-six.vercel.app/)**  
-
+[Visit the Live Website](https://what-bytes-assignment-six.vercel.app/) 
+=
 Or copy the link provided below and paste it in your browser:  
 https://what-bytes-assignment-six.vercel.app/  
 
