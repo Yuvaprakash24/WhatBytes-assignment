@@ -6,9 +6,11 @@ This Django project is a fully functional user management system featuring authe
 
 ## 🚀 Live Demo  
 
-** [Visit the Live Website](https://what-bytes-assignment-six.vercel.app/) **
-or copy the link provided below and paste it in browser url  
-https://beyondchats-assignment.netlify.app/  
+**[Visit the Live Website](https://what-bytes-assignment-six.vercel.app/)**  
+
+Or copy the link provided below and paste it in your browser:  
+https://what-bytes-assignment-six.vercel.app/  
+
 ---
 
 ## 🛠️ Features  
@@ -67,14 +69,17 @@ To run this project locally:
    cd WhatBytes-assignment  
 
 2. Create a virtual environment and activate it:  
-   ```python -m venv venv  
+   ```
+   python -m venv venv  
    venv/bin/activate  
 
 4. Install dependencies:  
-   ```pip install -r requirements.txt  
+   ```
+   pip install -r requirements.txt  
    Migration is not required because I'm using online PostgreSQL database.    
 5. Run the development server:  
-   ```python manage.py runserver  
+   ```
+   python manage.py runserver  
 
   Access the application at http://localhost:8000/.  
 
