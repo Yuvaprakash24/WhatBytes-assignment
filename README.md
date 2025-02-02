@@ -76,7 +76,8 @@ To run this project locally:
 4. Install dependencies:  
    ```
    pip install -r requirements.txt  
-   Migration is not required because I'm using online PostgreSQL database.    
+
+  Migration is not required because I'm using online PostgreSQL database.    
 5. Run the development server:  
    ```
    python manage.py runserver  
@@ -95,4 +96,3 @@ Test authentication features like password reset and change password.
 ## 🤝 Acknowledgments
 Thank you for providing this opportunity to showcase my Django development skills.
 
----
