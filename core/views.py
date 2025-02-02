@@ -82,9 +82,8 @@ def change_password(request):
         form = PasswordChangeForm(request.user, request.POST)
         if form.is_valid():
             user = form.save()
-            update_session_auth_hash(request, user)  # Prevents logout after password change
-            messages.success(request, 'Your password was successfully updated!')
-            return redirect('profile')  # Redirect to profile page after success
+            update_session_auth_hash(request, user) 
+            return redirect('profile') 
         else:
             messages.error(request, 'Please correct the error below.')
     else:
