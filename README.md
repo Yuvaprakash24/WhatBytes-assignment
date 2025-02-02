@@ -73,11 +73,11 @@ To run this project locally:
    python -m venv venv  
    venv/bin/activate  
 
-4. Install dependencies:  
+3. Install dependencies:  
    ```
-   pip install -r requirements.txt  
+   pip install -r requirements.txt
 
-  Migration is not required because I'm using online PostgreSQL database.    
+4. Migration is not required because I'm using online PostgreSQL database.    
 5. Run the development server:  
    ```
    python manage.py runserver  
