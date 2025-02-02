@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<section class="d-flex align-items-center justify-content-center min-vh-100 my-5">
+    <div class="card shadow-5-strong bg-body-tertiary" style="max-width: 600px; width: 100%;">
+        <div class="card-body py-5 px-md-5">
+            <h2 class="fw-bold mb-4 text-center myff">Sign up now</h2>
+            <form action="signup" method="post">
+                {% csrf_token %}
+
+                <div class="form-outline mb-3">
+                    <input type="text" id="username" name="username" class="form-control" required />
+                    <label class="form-label" for="username">Username</label>
+                    {% for error in form.username.errors %}
+                        <p class="text-danger">{{ error }}</p>
+                    {% endfor %}
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <div class="form-outline">
+                            <input type="text" id="first_name" name="first_name" class="form-control" required />
+                            <label class="form-label" for="first_name">First name</label>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <div class="form-outline">
+                            <input type="text" id="last_name" name="last_name" class="form-control" required />
+                            <label class="form-label" for="last_name">Last name</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-outline mb-3">
+                    <input type="email" id="email" name="email" class="form-control" required />
+                    <label class="form-label" for="email">Email address</label>
+                    {% for error in form.email.errors %}
+                        <p class="text-danger">{{ error }}</p>
+                    {% endfor %}
+                </div>
+
+                <div class="form-outline mb-3">
+                    <input type="password" id="password1" name="password1" class="form-control" required />
+                    <label class="form-label" for="password1">Password</label>
+                    {% for error in form.password1.errors %}
+                        <p class="text-danger">{{ error }}</p>
+                    {% endfor %}
+                </div>
+
+                <div class="form-outline mb-3">
+                    <input type="password" id="password2" name="password2" class="form-control" required />
+                    <label class="form-label" for="password2">Confirm Password</label>
+                    {% for error in form.password2.errors %}
+                        <p class="text-danger">{{ error }}</p>
+                    {% endfor %}
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-lg btn-block form-control">Sign up</button>
+
+                <p class="small fw-bold text-center mt-3">
+                    Have an account already? <a href="{% url 'login' %}" class="link-danger">Log in</a>
+                </p>
+            </form>
+        </div>
+    </div>
+</section>
+{% endblock %}

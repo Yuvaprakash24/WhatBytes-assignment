@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<section class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow-lg border-0 rounded-4">
+                <div class="card-body text-center p-5">
+                    <h2 class="mb-3 text-primary">Hi, {{ user.username }}! 👋</h2>
+                    <p class="lead text-muted">Welcome to your dashboard.</p>
+
+                    <hr class="my-4">
+
+                    <div class="d-grid gap-3">
+                        <a href="{% url 'profile' %}" class="btn btn-outline-primary btn-lg">
+                            <i class="fas fa-user"></i> View Profile
+                        </a>
+                        <a href="{% url 'change_password' %}" class="btn btn-outline-warning btn-lg">
+                            <i class="fas fa-key"></i> Change Password
+                        </a>
+                        <a href="{% url 'logout' %}" class="btn btn-danger btn-lg">
+                            <i class="fas fa-sign-out-alt"></i> Logout
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

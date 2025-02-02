@@ -1,0 +1,11 @@
+# Ignore Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignore environment variables
+venv
+
+# Ignore migrations
+*/migrations/*.pyc
+*/migrations/*.py
